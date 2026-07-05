@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>모의고사 풀기</title><link rel="stylesheet" href="../assets/style.css"/>
+</head>
+<body>
+<header>
+  <a class="home-link" href="../index.html">← 메인으로</a>
+  <h1>모의고사 풀기</h1>
+  <div class="sub">3회분 모의고사를 시험처럼 풀고, 제출 후 정답·해설·약점분석을 확인합니다. 1차/2차 1교시는 80문항, 2차 2교시는 40문항입니다.</div>
+</header>
+<main>
+  <section class="top-grid">
+    <div class="panel">
+      <strong id="examTitle">모의고사</strong>
+      <div class="search" style="margin-top:10px">
+        <select id="examSelect" class="select"></select>
+      </div>
+      <div class="stat-row">
+        <div class="stat"><strong id="totalCount">0</strong><span>문항</span></div>
+        <div class="stat"><strong id="answeredCount">0</strong><span>응답</span></div>
+        <div class="stat"><strong id="scoreBox">미제출</strong><span>점수</span></div>
+        <div class="stat"><strong id="submitState">-</strong><span>상태</span></div>
+      </div>
+      <div class="card-actions">
+        <button id="submitBtn">제출하고 채점</button>
+        <button id="resetExamBtn">이 시험 초기화</button>
+      </div>
+    </div>
+    <div class="panel">
+      <strong>사용법</strong>
+      <div class="sub">제출 전에는 정답과 해설이 숨겨집니다. 제출 후 해설과 약점분석이 열립니다. 결과 텍스트를 복사해서 채팅에 붙이면 내가 추가 분석할 수 있습니다.</div>
+      <textarea id="reportText" class="memo" style="min-height:120px"></textarea>
+      <button id="copyReportBtn" style="margin-top:8px;width:100%">분석용 텍스트 복사</button>
+    </div>
+  </section>
+  <section id="analysis"></section>
+  <section class="cards mock-list" id="examQuestions"></section>
+</main>
+<nav class="mobile-bottom-nav"><a href="../index.html">홈</a><a href="practice.html">일반문제</a><button onclick="submitExam()">채점</button></nav>
+<script src="../assets/mock-exam-app.js"></script>
+</body>
+</html>
