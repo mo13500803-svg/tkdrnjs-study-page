@@ -1,0 +1,622 @@
+[
+  {
+    "id": "seb-ox-001",
+    "largeUnit": "세법총론",
+    "smallUnit": "조세분류",
+    "title": "조세분류 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "세법총론",
+      "조세분류",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "종합부동산세는 국세이면서 보유세이다.",
+    "answer": "O",
+    "allowed": "O",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-002",
+    "largeUnit": "세법총론",
+    "smallUnit": "조세분류",
+    "title": "조세분류 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "세법총론",
+      "조세분류",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "재산세는 국세이면서 보유세이다.",
+    "answer": "X",
+    "allowed": "X",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-003",
+    "largeUnit": "세법총론",
+    "smallUnit": "납세절차",
+    "title": "납세절차 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "세법총론",
+      "납세절차",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "취득세와 등록면허세는 신고납부 세목이다.",
+    "answer": "O",
+    "allowed": "O",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-004",
+    "largeUnit": "세법총론",
+    "smallUnit": "납세절차",
+    "title": "납세절차 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "세법총론",
+      "납세절차",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "재산세는 신고납부 방식으로 납부한다.",
+    "answer": "X",
+    "allowed": "X",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-005",
+    "largeUnit": "세법총론",
+    "smallUnit": "제척기간·소멸시효",
+    "title": "제척기간·소멸시효 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "세법총론",
+      "제척기간·소멸시효",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "제척기간은 기간 진행 중 정지나 중단이 적용된다.",
+    "answer": "X",
+    "allowed": "X",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-006",
+    "largeUnit": "세법총론",
+    "smallUnit": "불복청구",
+    "title": "불복청구 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "세법총론",
+      "불복청구",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "지방세에는 심사청구제도가 없다.",
+    "answer": "O",
+    "allowed": "O",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-007",
+    "largeUnit": "취득세",
+    "smallUnit": "개념·과세대상",
+    "title": "개념·과세대상 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "취득세",
+      "개념·과세대상",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "취득세는 원칙적으로 사실상 현황에 따라 부과한다.",
+    "answer": "O",
+    "allowed": "O",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-008",
+    "largeUnit": "취득세",
+    "smallUnit": "납세의무자",
+    "title": "납세의무자 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "취득세",
+      "납세의무자",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "부동산 취득은 등기·등록을 하지 않으면 취득세가 과세되지 않는다.",
+    "answer": "X",
+    "allowed": "X",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-009",
+    "largeUnit": "취득세",
+    "smallUnit": "취득의 종류",
+    "title": "취득의 종류 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "취득세",
+      "취득의 종류",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "법인 설립시 주식 취득으로 과점주주가 된 경우 취득세 과세대상이다.",
+    "answer": "X",
+    "allowed": "X",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-010",
+    "largeUnit": "취득세",
+    "smallUnit": "과점주주",
+    "title": "과점주주 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "취득세",
+      "과점주주",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "과점주주는 50%를 초과해야 한다.",
+    "answer": "O",
+    "allowed": "O",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-011",
+    "largeUnit": "취득세",
+    "smallUnit": "취득시기",
+    "title": "취득시기 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "취득세",
+      "취득시기",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "취득세에서 민법상 시효취득의 취득시기는 점유개시일이다.",
+    "answer": "X",
+    "allowed": "X",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-012",
+    "largeUnit": "취득세",
+    "smallUnit": "과세표준",
+    "title": "과세표준 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "취득세",
+      "과세표준",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "상속으로 취득하는 경우 취득세 과세표준은 시가표준액이다.",
+    "answer": "O",
+    "allowed": "O",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-013",
+    "largeUnit": "취득세",
+    "smallUnit": "중과세",
+    "title": "중과세 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "취득세",
+      "중과세",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "법인이 주택을 취득하는 경우 12% 세율이 적용된다.",
+    "answer": "O",
+    "allowed": "O",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-014",
+    "largeUnit": "취득세",
+    "smallUnit": "중과세",
+    "title": "중과세 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "취득세",
+      "중과세",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "법인이 고급주택을 취득하는 경우 12%만 적용한다.",
+    "answer": "X",
+    "allowed": "X",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-015",
+    "largeUnit": "등록면허세",
+    "smallUnit": "개념",
+    "title": "개념 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "등록면허세",
+      "개념",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "등록면허세는 등기·등록자의 실질적 권리 유무를 따져 과세한다.",
+    "answer": "X",
+    "allowed": "X",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-016",
+    "largeUnit": "등록면허세",
+    "smallUnit": "납세의무자",
+    "title": "납세의무자 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "등록면허세",
+      "납세의무자",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "저당권설정 등기의 등록면허세 납세의무자는 저당권자이다.",
+    "answer": "O",
+    "allowed": "O",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-017",
+    "largeUnit": "재산세",
+    "smallUnit": "납세의무자",
+    "title": "납세의무자 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "재산세",
+      "납세의무자",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "재산세는 6월 1일 현재 사실상 소유자에게 과세한다.",
+    "answer": "O",
+    "allowed": "O",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-018",
+    "largeUnit": "재산세",
+    "smallUnit": "납세의무자",
+    "title": "납세의무자 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "재산세",
+      "납세의무자",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "6월 1일 매매의 재산세 납세의무자는 매도자이다.",
+    "answer": "X",
+    "allowed": "X",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-019",
+    "largeUnit": "재산세",
+    "smallUnit": "과세표준",
+    "title": "과세표준 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "재산세",
+      "과세표준",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "재산세 토지와 건축물의 공정시장가액비율은 70%이다.",
+    "answer": "O",
+    "allowed": "O",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-020",
+    "largeUnit": "재산세",
+    "smallUnit": "과세표준",
+    "title": "과세표준 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "재산세",
+      "과세표준",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "재산세 일반 주택의 공정시장가액비율은 70%이다.",
+    "answer": "X",
+    "allowed": "X",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-021",
+    "largeUnit": "종합부동산세",
+    "smallUnit": "개념·세대",
+    "title": "개념·세대 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "종합부동산세",
+      "개념·세대",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "종합부동산세는 원칙적으로 정부부과과세이다.",
+    "answer": "O",
+    "allowed": "O",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-022",
+    "largeUnit": "종합부동산세",
+    "smallUnit": "주택분",
+    "title": "주택분 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "종합부동산세",
+      "주택분",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "법인 소유 주택의 종부세 기본공제는 9억원이다.",
+    "answer": "X",
+    "allowed": "X",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-023",
+    "largeUnit": "종합부동산세",
+    "smallUnit": "토지분·납부",
+    "title": "토지분·납부 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "종합부동산세",
+      "토지분·납부",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "분리과세대상 토지는 종합부동산세 과세대상이다.",
+    "answer": "X",
+    "allowed": "X",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-024",
+    "largeUnit": "종합소득세",
+    "smallUnit": "주택임대소득",
+    "title": "주택임대소득 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "종합소득세",
+      "주택임대소득",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "1주택 보유자의 월세수입은 원칙 비과세이나 고가주택 등은 과세될 수 있다.",
+    "answer": "O",
+    "allowed": "O",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-025",
+    "largeUnit": "종합소득세",
+    "smallUnit": "주택임대소득",
+    "title": "주택임대소득 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "종합소득세",
+      "주택임대소득",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "주택면적과 사업용 건물면적이 같으면 건물 전체를 주택으로 본다.",
+    "answer": "X",
+    "allowed": "X",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-026",
+    "largeUnit": "양도소득세",
+    "smallUnit": "과세대상·양도",
+    "title": "과세대상·양도 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "양도소득세",
+      "과세대상·양도",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "상속과 증여는 양도소득세에서 양도에 해당한다.",
+    "answer": "X",
+    "allowed": "X",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-027",
+    "largeUnit": "양도소득세",
+    "smallUnit": "양도·취득시기",
+    "title": "양도·취득시기 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "양도소득세",
+      "양도·취득시기",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "양도세 양도시기는 원칙적으로 대금청산일이다.",
+    "answer": "O",
+    "allowed": "O",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-028",
+    "largeUnit": "양도소득세",
+    "smallUnit": "양도·취득시기",
+    "title": "양도·취득시기 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "양도소득세",
+      "양도·취득시기",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "양도세에서 점유취득시효 부동산의 취득시기는 등기일이다.",
+    "answer": "X",
+    "allowed": "X",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-029",
+    "largeUnit": "양도소득세",
+    "smallUnit": "1세대1주택",
+    "title": "1세대1주택 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "양도소득세",
+      "1세대1주택",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "취득 당시 조정대상지역 주택은 보유 2년만으로 비과세 가능하다.",
+    "answer": "X",
+    "allowed": "X",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-030",
+    "largeUnit": "양도소득세",
+    "smallUnit": "세율·미등기",
+    "title": "세율·미등기 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "양도소득세",
+      "세율·미등기",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "미등기자산 양도는 장기보유특별공제와 기본공제가 배제된다.",
+    "answer": "O",
+    "allowed": "O",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  },
+  {
+    "id": "seb-ox-031",
+    "largeUnit": "양도소득세",
+    "smallUnit": "국외자산",
+    "title": "국외자산 OX",
+    "level": "★★★★☆",
+    "tags": [
+      "양도소득세",
+      "국외자산",
+      "OX"
+    ],
+    "trap": "반대 개념으로 바꿔 출제하는 함정.",
+    "category": "OX",
+    "type": "OX",
+    "question": "국외 1주택도 보유기간 2년 이상이면 1세대1주택 비과세가 적용된다.",
+    "answer": "X",
+    "allowed": "X",
+    "explanation": "정답은 O/X를 먼저 판단.",
+    "memory": ""
+  }
+]

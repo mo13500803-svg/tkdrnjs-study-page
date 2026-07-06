@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>공인중개사 합격센터</title><link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body>
+<header>
+  <h1>공인중개사 합격센터</h1>
+  <div class="sub">민법 + 세법 + 전 과목 임시 채움 + 공시법 + 모의고사</div>
+</header>
+<main>
+  <section class="top-grid">
+    <div class="panel">
+      <div class="dday" id="dday">D-계산중</div>
+      <div class="sub">2026년 10월 31일 시험 기준</div>
+      <div class="stat-row">
+        <div class="stat"><strong>민법</strong><span>운영중</span></div>
+        <div class="stat"><strong>세법</strong><span>추가완료</span></div>
+        <div class="stat"><strong>600</strong><span>모의고사 문제</span></div>
+        <div class="stat"><strong>9</strong><span>시험 세트</span></div>
+      </div>
+    </div>
+    <div class="panel">
+      <strong>반영 기준</strong>
+      <div class="sub">중개사법·학개론·공법은 정식자료로 교체했고, 일부 과목은 모의고사 기반 임시자료입니다.</div>
+    </div>
+  </section>
+
+  <section class="subject-grid">
+    <a class="subject-card ready" href="subjects/minbeop.html">
+      <div>
+        <div class="subject-title">📘 민법</div>
+        <span class="pill">반드시</span><span class="pill">암기카드</span><span class="pill">OX/빈칸 채점</span>
+      </div>
+      <div class="go">열기 →</div>
+    </a>
+    <div class="subject-card disabled"><div><div class="subject-title">📗 학개론</div><span class="pill">준비중</span></div><div>추가 예정</div></div>
+    <div class="subject-card disabled"><div><div class="subject-title">📙 중개사법</div><span class="pill">준비중</span></div><div>추가 예정</div></div>
+    <div class="subject-card disabled"><div><div class="subject-title">📕 공법</div><span class="pill">준비중</span></div><div>추가 예정</div></div>
+    <div class="subject-card disabled"><div><div class="subject-title">📓 공시법</div><span class="pill">준비중</span></div><div>추가 예정</div></div>
+    <a class="subject-card ready" href="subjects/sebeop.html"><div><div class="subject-title">📔 세법</div><span class="pill">숫자/세율</span><span class="pill">OX/빈칸 채점</span><span class="pill">완전암기</span></div><div class="go">열기 →</div></a>
+  
+    <a class="subject-card ready" href="subjects/mock.html">
+      <div><div class="subject-title">📝 모의고사</div><span class="pill">3회분</span><span class="pill">제출 후 해설</span><span class="pill">약점분석</span></div>
+      <div class="go">열기 →</div>
+    </a>
+    <a class="subject-card ready" href="subjects/practice.html">
+      <div><div class="subject-title">🎯 일반 문제은행</div><span class="pill">600문항</span><span class="pill">랜덤 20/40</span><span class="pill">단원필터</span></div>
+      <div class="go">열기 →</div>
+    </a>
+
+    <a class="subject-card ready" href="subjects/gongsi.html">
+      <div>
+        <div class="subject-title">📚 공시법</div>
+        <span class="pill">지적법 402개</span>
+        <span class="pill">등기법 487개</span>
+        <span class="pill">분리완료</span>
+      </div>
+      <div class="go">열기 →</div>
+    </a>
+
+    
+
+    
+
+    
+
+    
+
+    <a class="subject-card ready" href="subjects/hakgaeron.html">
+      <div>
+        <div class="subject-title">📐 부동산학개론</div>
+        <span class="pill">반드시 222개</span>
+        <span class="pill">공식 64개</span>
+        <span class="pill">빈칸 222개</span>
+      </div>
+      <div class="go">열기 →</div>
+    </a>
+
+    <a class="subject-card ready" href="subjects/gongbeop.html">
+      <div>
+        <div class="subject-title">🏙️ 부동산공법</div>
+        <span class="pill">반드시 253개</span>
+        <span class="pill">핵심요약 223개</span>
+        <span class="pill">객관식/빈칸 157개</span>
+      </div>
+      <div class="go">열기 →</div>
+    </a>
+
+    <a class="subject-card ready" href="subjects/junggaesa.html">
+      <div>
+        <div class="subject-title">📗 중개사법</div>
+        <span class="pill">반드시 940개</span>
+        <span class="pill">OX/빈칸 448개</span>
+        <span class="pill">핵심기출 417개</span>
+      </div>
+      <div class="go">열기 →</div>
+    </a>
+  </section>
+</main>
+<nav class="mobile-bottom-nav"><a href="index.html">홈</a><a href="subjects/junggaesa.html">중개사법</a><a href="subjects/practice.html">문제</a></nav>
+<script>
+const examDate=new Date("2026-10-31T00:00:00+09:00");
+const diff=Math.ceil((examDate-new Date())/(1000*60*60*24));
+document.getElementById("dday").textContent=diff>=0?`D-${diff}`:`D+${Math.abs(diff)}`;
+</script>
+</body>
+</html>
