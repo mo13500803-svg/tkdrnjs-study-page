@@ -281,3 +281,16 @@ th{color:var(--accent);font-weight:900;background:#020617}
 .formula-card .memory-label{
   color:#67e8f9;
 }
+
+
+/* 문제은행 긴 지문·선택지·해설 전체 표시 보강 */
+.question-card,.question-card *{max-width:100%;}
+.question-card .title,.choices,.choice span,.explain,.answer,.extra{
+  white-space:pre-line;
+  overflow:visible;
+  text-overflow:clip;
+  overflow-wrap:anywhere;
+  word-break:break-word;
+}
+.mock-list{align-items:start;}
+.mobile-bottom-nav button{font-size:13px;}

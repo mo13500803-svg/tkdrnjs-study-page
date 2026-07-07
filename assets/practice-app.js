@@ -127,6 +127,7 @@ function initPracticeFilters() {
   document.getElementById("random40Btn").addEventListener("click", () => buildPracticeList(true, 40));
   document.getElementById("allBtn").addEventListener("click", () => buildPracticeList(false));
   document.getElementById("submitPracticeBtn").addEventListener("click", submitPractice);
+  document.getElementById("resetPracticeBtn").addEventListener("click", resetPractice);
   document.getElementById("copyPracticeReportBtn").addEventListener("click", () => copyTextFromElement("practiceReportText"));
   refreshUnitFilter();
 }
@@ -222,6 +223,15 @@ function scorePractice() {
   }
   return {total:currentList.length, answered, correct, score:correct, wrongs, subjectStats, unitStats};
 }
+function resetPractice() {
+  if (!currentList.length) return;
+  if (!confirm("현재 문제은행 세트의 선택답안과 채점결과를 초기화할까?")) return;
+  currentList.forEach(q => localStorage.removeItem(answerKey("practice_" + q.id)));
+  submittedPractice = false;
+  renderPractice();
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+
 function submitPractice() {
   submittedPractice = true;
   renderPractice();
