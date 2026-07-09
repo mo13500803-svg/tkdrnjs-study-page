@@ -294,3 +294,83 @@ th{color:var(--accent);font-weight:900;background:#020617}
 }
 .mock-list{align-items:start;}
 .mobile-bottom-nav button{font-size:13px;}
+
+/* Prevent long questions, choices, answers, unit buttons, and table text from being clipped. */
+main,section,article,aside,div,button,label,summary,span,p,td,th,input,textarea,select{
+  min-width:0;
+}
+.card,.question-card,.memory-card,.panel,.quiz-box,.choice,.choice-btn,
+.tree-section,.tree-head,.tree-child button,.folder-chip,.tabs button,
+.mobile-bottom-nav a,.mobile-bottom-nav button{
+  height:auto;
+  max-height:none;
+  overflow:visible;
+  text-overflow:clip;
+}
+.title,.question,.answer,.extra,.visible-answer,.visible-note,.study-cell,
+.memory-title,.memory-meta,.memory-label,.memory-content,
+.choice,.choice span,.choice-btn,.quiz-title,.quiz-result,
+.tree-head,.tree-head span,.tree-child button,.folder-chip,.tabs button,
+.stat,.stat strong,.stat span,.badge,.sub,td,th{
+  white-space:normal;
+  overflow-wrap:anywhere;
+  word-break:break-word;
+  line-break:anywhere;
+}
+.question,.answer,.extra,.visible-answer,.visible-note,.study-cell,
+.memory-content,.question-card .title{
+  white-space:pre-wrap;
+}
+.choice{
+  grid-template-columns:minmax(22px,auto) minmax(0,1fr);
+}
+.choice input{
+  flex:0 0 auto;
+}
+.choice span{
+  display:block;
+}
+.tree-section,.memory-unit,.memory-trap{
+  overflow:visible;
+}
+.tree-head{
+  gap:8px;
+  align-items:flex-start;
+}
+.tree-head span:first-child{
+  flex:1 1 auto;
+}
+.tree-head span:last-child{
+  flex:0 0 auto;
+}
+.study-table{
+  min-width:0;
+  table-layout:fixed;
+}
+@media(max-width:720px){
+  .tabs,.folder-strip{
+    flex-wrap:wrap;
+    overflow-x:visible;
+  }
+  .tabs button,.folder-chip{
+    flex:1 1 auto;
+    white-space:normal;
+  }
+  .tree{
+    display:grid;
+    overflow-x:visible;
+  }
+  .tree-section{
+    min-width:0;
+  }
+  .tree-child{
+    max-height:none;
+    overflow:visible;
+  }
+  .choice{
+    grid-template-columns:minmax(22px,auto) minmax(0,1fr);
+  }
+  .study-table{
+    min-width:0;
+  }
+}
