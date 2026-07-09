@@ -232,6 +232,36 @@ th{color:var(--accent);font-weight:900;background:#020617}
   width:100%;
   border-radius:13px;
 }
+.mnemonic-hint{
+  background:#07111f;
+  border-color:#2563eb;
+  margin:8px 0 10px;
+}
+.mnemonic-hint summary{
+  color:#93c5fd;
+}
+.mnemonic-row{
+  display:grid;
+  gap:4px;
+  padding:10px 0;
+  border-top:1px solid var(--line);
+  line-height:1.5;
+}
+.mnemonic-row:first-of-type{
+  border-top:0;
+}
+.mnemonic-row b{
+  color:var(--accent);
+  font-size:16px;
+}
+.mnemonic-row span{
+  color:#e2e8f0;
+  font-weight:800;
+}
+.mnemonic-row small{
+  color:#cbd5e1;
+  font-size:13px;
+}
 @media(max-width:720px){
   .memory-unit>summary{
     padding:13px 12px;
