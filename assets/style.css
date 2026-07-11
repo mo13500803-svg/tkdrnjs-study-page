@@ -83,6 +83,9 @@ summary{cursor:pointer;color:var(--accent);font-weight:800}.answer,.extra{margin
 .choice.wrong-choice{border-color:var(--red);background:rgba(127,29,29,.35)}
 .badge.pass{background:#064e3b;color:#d1fae5}
 .badge.fail{background:#7f1d1d;color:#fecaca}
+.badge.predicted{background:#854d0e;color:#fef3c7;border:1px solid #fbbf24;font-weight:900}
+.predicted-action{background:#854d0e;border-color:#fbbf24;color:#fef3c7;font-weight:900}
+.prediction-reason{margin:8px 0 10px;padding:9px 10px;border-left:3px solid var(--yellow);background:rgba(133,77,14,.22);color:#fef3c7;font-size:13px;line-height:1.55;white-space:pre-wrap}
 .analysis-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
 .page-controls{display:flex;justify-content:center;align-items:center;gap:12px;margin:18px 0 8px}
 .page-controls strong{min-width:90px;text-align:center}

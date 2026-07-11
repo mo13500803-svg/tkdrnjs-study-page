@@ -165,6 +165,15 @@ function initPracticeFilters() {
   document.getElementById("typeFilter").addEventListener("change", () => buildPracticeList(false));
   document.getElementById("roundFilter").addEventListener("change", () => buildPracticeList(false));
   document.getElementById("keywordInput").addEventListener("input", () => buildPracticeList(false));
+  document.getElementById("predictedBtn").addEventListener("click", () => {
+    subj.value = "";
+    refreshUnitFilter();
+    document.getElementById("unitFilter").value = "";
+    document.getElementById("typeFilter").value = "";
+    document.getElementById("roundFilter").value = "예상";
+    document.getElementById("keywordInput").value = "";
+    buildPracticeList(false);
+  });
   document.getElementById("random20Btn").addEventListener("click", () => buildPracticeList(true, 20));
   document.getElementById("random40Btn").addEventListener("click", () => buildPracticeList(true, 40));
   document.getElementById("allBtn").addEventListener("click", () => buildPracticeList(false));
@@ -192,7 +201,7 @@ function filteredBase() {
     if (type && questionKind(q) !== type) return false;
     if (round && String(q.round) !== round) return false;
     if (kw) {
-      const text = [q.question, q.answer, q.explanation, q.subject, q.unit, q.type, ...(q.choices || [])].join(" ").toLowerCase();
+      const text = [q.question, q.answer, q.explanation, q.predictionReason, q.subject, q.unit, q.type, ...(q.choices || [])].join(" ").toLowerCase();
       if (!text.includes(kw)) return false;
     }
     return true;
@@ -268,7 +277,7 @@ function renderPractice() {
     const status = submittedPractice && isScorable(q)
       ? (ok ? '<span class="badge pass">정답</span>' : '<span class="badge fail">오답</span>')
       : (q.mode === "reveal" ? '<span class="badge type">확인용</span>' : "");
-    const sourceBadge = q.round === "자료" ? "추가자료" : `${q.round}회 ${String(q.session).replace("2차1교시", "2차 1교시").replace("2차2교시", "2차 2교시")}`;
+    const sourceBadge = q.round === "예상" ? "2026 예상문제" : (q.round === "자료" ? "추가자료" : `${q.round}회 ${String(q.session).replace("2차1교시", "2차 1교시").replace("2차2교시", "2차 2교시")}`);
     return `<article class="card question-card">
       <div class="badge-row">
         <span class="badge unit">${esc(sourceBadge)}</span>
@@ -276,9 +285,11 @@ function renderPractice() {
         <span class="badge type">${esc(q.unit)}</span>
         <span class="badge type">${esc(questionKind(q))}</span>
         <span class="badge type">전체 ${esc(q.globalNo)}번</span>
+        ${q.predicted ? '<span class="badge predicted">2026 출제예상</span>' : ""}
         ${status}
       </div>
       <div class="title">${esc(q.globalNo)}. ${esc(q.question)}</div>
+      ${q.predicted ? `<div class="prediction-reason"><strong>예상 근거</strong><br>${esc(q.predictionReason || "반복 출제 핵심 쟁점")}</div>` : ""}
       ${choices ? `<div class="choices">${choices}</div>` : ""}
       ${textAnswer}
       ${q.mode === "reveal" ? '<div class="reveal-note">정답이 별도로 표시되지 않은 원문은 확인형으로 보관했습니다.</div>' : ""}
@@ -331,10 +342,14 @@ function submitPractice() {
   window.scrollTo({top:0, behavior:"smooth"});
 }
 async function loadSupplementalQuestions() {
-  const response = await fetch("../data/practice/supplemental-questions.json?v=20260711-all-questions");
-  if (!response.ok) throw new Error(`추가 문제를 불러오지 못했습니다. (${response.status})`);
-  const supplemental = await response.json();
-  ALL_QUESTIONS = QUESTIONS.map(q => ({...q, mode:"choice"})).concat(supplemental);
+  const [supplementalResponse, predictedResponse] = await Promise.all([
+    fetch("../data/practice/supplemental-questions.json?v=20260712-predicted"),
+    fetch("../data/practice/predicted-questions.json?v=20260712-predicted")
+  ]);
+  if (!supplementalResponse.ok) throw new Error(`추가 문제를 불러오지 못했습니다. (${supplementalResponse.status})`);
+  if (!predictedResponse.ok) throw new Error(`예상 문제를 불러오지 못했습니다. (${predictedResponse.status})`);
+  const [supplemental, predicted] = await Promise.all([supplementalResponse.json(), predictedResponse.json()]);
+  ALL_QUESTIONS = QUESTIONS.map(q => ({...q, mode:"choice"})).concat(supplemental, predicted);
 }
 document.addEventListener("DOMContentLoaded", async () => {
   try {
