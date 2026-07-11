@@ -2,13 +2,13 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>통합 문제은행</title><link rel="stylesheet" href="../assets/style.css?v=20260712-predicted"/>
+<title>통합 문제은행</title><link rel="stylesheet" href="../assets/style.css?v=20260712-memory"/>
 </head>
 <body>
 <header>
   <a class="home-link" href="../index.html">← 메인으로</a>
   <h1>통합 문제은행</h1>
-  <div class="sub">기존 문제·제공 자료와 별도로 2026 출제예상 문제를 표시해 함께 제공합니다.</div>
+  <div class="sub">기존 문제와 2026 예상문제에 숫자·기간·주체 중심의 필수암기 문제를 추가했습니다.</div>
 </header>
 <main>
   <section class="top-grid">
@@ -19,11 +19,12 @@
         <select id="unitFilter" class="select"></select>
         <select id="typeFilter" class="select"></select>
         <select id="roundFilter" class="select">
-          <option value="">전체 출처</option><option value="예상">2026 예상문제</option><option value="1">모의 1회</option><option value="2">모의 2회</option><option value="3">모의 3회</option><option value="자료">추가자료</option>
+          <option value="">전체 출처</option><option value="암기">필수암기 문제</option><option value="예상">2026 예상문제</option><option value="1">모의 1회</option><option value="2">모의 2회</option><option value="3">모의 3회</option><option value="자료">추가자료</option>
         </select>
         <input id="keywordInput" class="quiz-input" placeholder="검색어: 취득세, 수요, 대리, 6월 1일..." />
       </div>
       <div class="card-actions">
+        <button id="memoryBtn" class="memory-action">필수암기만</button>
         <button id="predictedBtn" class="predicted-action">2026 예상문제만</button>
         <button id="random20Btn">랜덤 20문제</button>
         <button id="random40Btn">랜덤 40문제</button>
@@ -53,6 +54,6 @@
   </div>
 </main>
 <nav class="mobile-bottom-nav"><a href="../index.html">홈</a><a href="mock.html">모의고사</a><button onclick="submitPractice()">채점</button><button onclick="resetPractice()">초기화</button></nav>
-<script src="../assets/practice-app.js?v=20260712-predicted"></script>
+<script src="../assets/practice-app.js?v=20260712-memory"></script>
 </body>
 </html>
