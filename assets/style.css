@@ -108,6 +108,295 @@ th{color:var(--accent);font-weight:900;background:#020617}
 }
 
 
+.visible-answer{display:block;white-space:pre-line;margin-top:10px;background:#020617;border:1px solid var(--line);border-radius:14px;padding:13px;line-height:1.62}
+.visible-note{white-space:pre-line;margin-top:10px;line-height:1.55}
+.study-table-section{background:#0f172a;border:1px solid var(--line);border-radius:16px;padding:10px;margin-bottom:12px}
+.study-table-section>summary{cursor:pointer;font-weight:900;color:var(--accent);padding:8px 6px}
+.study-table{min-width:900px}
+.study-table th,.study-table td{vertical-align:top}
+.study-cell{white-space:pre-line;line-height:1.55}
+.muted{color:var(--muted);font-size:12px}
+@media(max-width:720px){
+  .study-table-section{padding:8px}
+  .study-table{min-width:780px;font-size:12px}
+  .visible-answer{font-size:14px}
+}
+
+
+/* 모바일 암기카드 개선 */
+.memory-unit{
+  background:#0f172a;
+  border:1px solid var(--line);
+  border-radius:18px;
+  margin-bottom:12px;
+  overflow:hidden;
+}
+.memory-unit>summary{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  cursor:pointer;
+  padding:14px 14px;
+  font-weight:900;
+  color:var(--accent);
+  line-height:1.35;
+}
+.memory-unit>summary b{
+  flex:0 0 auto;
+  background:#020617;
+  border:1px solid var(--line);
+  color:#e2e8f0;
+  border-radius:999px;
+  padding:5px 9px;
+  font-size:12px;
+}
+.memory-list{
+  display:grid;
+  gap:10px;
+  padding:0 10px 12px;
+}
+.memory-card{
+  background:#020617;
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:12px;
+}
+.memory-card.done{
+  border-color:#34d399;
+  background:rgba(6,78,59,.18);
+}
+.memory-top{
+  display:grid;
+  grid-template-columns:34px 1fr;
+  gap:9px;
+  align-items:start;
+  margin-bottom:10px;
+}
+.memory-no{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:30px;
+  height:30px;
+  border-radius:999px;
+  background:#111827;
+  color:#facc15;
+  font-weight:900;
+  border:1px solid var(--line);
+}
+.memory-title{
+  font-weight:900;
+  line-height:1.35;
+  color:#f8fafc;
+}
+.memory-meta{
+  margin-top:3px;
+  color:var(--muted);
+  font-size:12px;
+}
+.memory-section{
+  margin-top:9px;
+  background:#0f172a;
+  border:1px solid var(--line);
+  border-radius:13px;
+  padding:10px;
+}
+.memory-section.point{
+  background:#111827;
+}
+.memory-label{
+  font-size:12px;
+  color:var(--accent);
+  font-weight:900;
+  margin-bottom:5px;
+}
+.memory-content{
+  white-space:pre-line;
+  line-height:1.58;
+  color:#e2e8f0;
+  font-size:14px;
+}
+.memory-trap{
+  margin-top:9px;
+  border:1px solid #7f1d1d;
+  background:#3f1219;
+  border-radius:13px;
+  padding:0;
+  overflow:hidden;
+}
+.memory-trap>summary{
+  cursor:pointer;
+  padding:10px;
+  color:#fecaca;
+  font-weight:900;
+  font-size:13px;
+}
+.memory-trap .memory-content{
+  padding:0 10px 10px;
+  color:#fecaca;
+}
+.memory-actions{
+  margin-top:10px;
+  display:grid;
+}
+.memory-actions button{
+  width:100%;
+  border-radius:13px;
+}
+.mnemonic-hint{
+  background:#07111f;
+  border-color:#2563eb;
+  margin:8px 0 10px;
+}
+.mnemonic-hint summary{
+  color:#93c5fd;
+}
+.mnemonic-row{
+  display:grid;
+  gap:4px;
+  padding:10px 0;
+  border-top:1px solid var(--line);
+  line-height:1.5;
+}
+.mnemonic-row:first-of-type{
+  border-top:0;
+}
+.mnemonic-row b{
+  color:var(--accent);
+  font-size:16px;
+}
+.mnemonic-row span{
+  color:#e2e8f0;
+  font-weight:800;
+}
+.mnemonic-row small{
+  color:#cbd5e1;
+  font-size:13px;
+}
+@media(max-width:720px){
+  .memory-unit>summary{
+    padding:13px 12px;
+    font-size:14px;
+  }
+  .memory-list{
+    padding:0 8px 10px;
+  }
+  .memory-card{
+    padding:11px;
+  }
+  .memory-content{
+    font-size:13.5px;
+    line-height:1.55;
+  }
+}
+
+.progress-tools{
+  display:grid;
+  gap:12px;
+  margin-bottom:12px;
+}
+.progress-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.toggle-line{
+  display:flex;
+  align-items:center;
+  gap:7px;
+  color:#e2e8f0;
+  font-weight:800;
+  cursor:pointer;
+}
+.wrong-box{
+  min-height:130px;
+}
+.wrong-list{
+  display:grid;
+  gap:8px;
+  margin-top:10px;
+}
+.wrong-item{
+  display:grid;
+  gap:4px;
+  width:100%;
+  border-radius:13px;
+  text-align:left;
+  white-space:normal;
+  line-height:1.45;
+}
+.wrong-item b{
+  color:var(--accent);
+}
+.wrong-item span{
+  color:#e2e8f0;
+}
+.study-state-tools{
+  display:flex;
+  gap:6px;
+  flex-wrap:wrap;
+  margin:0 0 10px;
+}
+.study-state-tools button{
+  min-height:34px;
+  border-radius:12px;
+  padding:7px 9px;
+  font-size:12px;
+  font-weight:800;
+}
+.study-state-tools button.on{
+  border-color:var(--accent);
+  color:var(--accent);
+  background:#082f49;
+}
+.question-card.is-review{
+  border-color:var(--yellow);
+}
+.question-card.is-mastered{
+  border-color:var(--green);
+  opacity:.72;
+}
+.hide-mastered .question-card.is-mastered{
+  display:none;
+}
+
+
+.memory-section.trap-card{
+  background:#3f1219;
+  border-color:#7f1d1d;
+}
+.memory-section.trap-card .memory-label,
+.memory-section.trap-card .memory-content{
+  color:#fecaca;
+}
+
+
+.choice-btn{
+  width:100%;
+  text-align:left;
+  border:1px solid var(--line);
+  background:#020617;
+  color:#e2e8f0;
+  border-radius:13px;
+  padding:10px;
+  line-height:1.45;
+  cursor:pointer;
+}
+.choice-btn:hover{border-color:var(--accent)}
+
+
+.formula-table{
+  display:grid;
+  gap:12px;
+}
+.formula-card .memory-label{
+  color:#67e8f9;
+}
+
+
 /* 문제은행 긴 지문·선택지·해설 전체 표시 보강 */
 .question-card,.question-card *{max-width:100%;}
 .question-card .title,.choices,.choice span,.explain,.answer,.extra{
@@ -124,7 +413,7 @@ th{color:var(--accent);font-weight:900;background:#020617}
 main,section,article,aside,div,button,label,summary,span,p,td,th,input,textarea,select{
   min-width:0;
 }
-.card,.question-card,.panel,.quiz-box,.choice,
+.card,.question-card,.memory-card,.panel,.quiz-box,.choice,.choice-btn,
 .tree-section,.tree-head,.tree-child button,.folder-chip,.tabs button,
 .mobile-bottom-nav a,.mobile-bottom-nav button{
   height:auto;
@@ -132,8 +421,9 @@ main,section,article,aside,div,button,label,summary,span,p,td,th,input,textarea,
   overflow:visible;
   text-overflow:clip;
 }
-.title,.question,.answer,.extra,
-.choice,.choice span,.quiz-title,.quiz-result,
+.title,.question,.answer,.extra,.visible-answer,.visible-note,.study-cell,
+.memory-title,.memory-meta,.memory-label,.memory-content,
+.choice,.choice span,.choice-btn,.quiz-title,.quiz-result,
 .tree-head,.tree-head span,.tree-child button,.folder-chip,.tabs button,
 .stat,.stat strong,.stat span,.badge,.sub,td,th{
   white-space:normal;
@@ -141,7 +431,8 @@ main,section,article,aside,div,button,label,summary,span,p,td,th,input,textarea,
   word-break:break-word;
   line-break:anywhere;
 }
-.question,.answer,.extra,.question-card .title{
+.question,.answer,.extra,.visible-answer,.visible-note,.study-cell,
+.memory-content,.question-card .title{
   white-space:pre-wrap;
 }
 .choice{
@@ -153,7 +444,7 @@ main,section,article,aside,div,button,label,summary,span,p,td,th,input,textarea,
 .choice span{
   display:block;
 }
-.tree-section{
+.tree-section,.memory-unit,.memory-trap{
   overflow:visible;
 }
 .tree-head{
