@@ -73,7 +73,7 @@ summary{cursor:pointer;color:var(--accent);font-weight:800}.answer,.extra{margin
 
 
 .select{width:100%;border:1px solid var(--line);background:#020617;color:var(--text);border-radius:14px;padding:12px 13px;min-height:46px}
-.filter-grid{display:grid;grid-template-columns:1fr 1fr 150px 120px 1.2fr;gap:8px;margin-top:10px}
+.filter-grid{display:grid;grid-template-columns:1fr 1fr 120px 1.2fr;gap:8px;margin-top:10px}
 .mock-list{grid-template-columns:1fr}
 .question-card .title{font-size:16px;line-height:1.55;white-space:pre-line}
 .choices{display:grid;gap:8px;margin-top:10px}
@@ -83,19 +83,7 @@ summary{cursor:pointer;color:var(--accent);font-weight:800}.answer,.extra{margin
 .choice.wrong-choice{border-color:var(--red);background:rgba(127,29,29,.35)}
 .badge.pass{background:#064e3b;color:#d1fae5}
 .badge.fail{background:#7f1d1d;color:#fecaca}
-.badge.predicted{background:#854d0e;color:#fef3c7;border:1px solid #fbbf24;font-weight:900}
-.predicted-action{background:#854d0e;border-color:#fbbf24;color:#fef3c7;font-weight:900}
-.prediction-reason{margin:8px 0 10px;padding:9px 10px;border-left:3px solid var(--yellow);background:rgba(133,77,14,.22);color:#fef3c7;font-size:13px;line-height:1.55;white-space:pre-wrap}
-.badge.memory{background:#881337;color:#ffe4e6;border:1px solid #fb7185;font-weight:900}
-.memory-action{background:#881337;border-color:#fb7185;color:#ffe4e6;font-weight:900}
-.memory-tip{margin:8px 0 10px;padding:9px 10px;border-left:3px solid var(--red);background:rgba(136,19,55,.22);color:#ffe4e6;font-size:13px;line-height:1.55;white-space:pre-wrap}
 .analysis-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
-.page-controls{display:flex;justify-content:center;align-items:center;gap:12px;margin:18px 0 8px}
-.page-controls strong{min-width:90px;text-align:center}
-.page-controls button:disabled{opacity:.4;cursor:default}
-.text-answer{margin-top:10px}
-.text-answer label{display:block;color:var(--accent);font-size:13px;font-weight:800;margin-bottom:6px}
-.reveal-note{color:var(--muted);font-size:13px;line-height:1.5;margin-top:8px}
 .table-wrap{overflow:auto;margin-top:10px}
 table{width:100%;border-collapse:collapse;font-size:13px}
 th,td{border-bottom:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
@@ -487,4 +475,71 @@ main,section,article,aside,div,button,label,summary,span,p,td,th,input,textarea,
   .study-table{
     min-width:0;
   }
+}
+
+/* 모의고사 전용 홈 */
+.mock-home{max-width:780px;margin:24px auto}
+.mock-home-hero{padding:22px}
+.mock-start{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:18px;
+  margin-top:18px;
+  padding:18px;
+  border:1px solid var(--accent);
+  border-radius:16px;
+  background:linear-gradient(135deg,rgba(8,47,73,.9),rgba(15,23,42,.95));
+}
+.mock-start span{display:grid;gap:7px}
+.mock-start b{font-size:22px;color:#f8fafc}
+.mock-start small{color:#cbd5e1;line-height:1.45}
+.mock-start>strong{color:var(--accent);white-space:nowrap}
+
+/* 시험별 저장 타이머 */
+.exam-timer{
+  margin-top:14px;
+  padding:14px;
+  border:1px solid #155e75;
+  border-radius:16px;
+  background:linear-gradient(135deg,rgba(8,47,73,.45),rgba(2,6,23,.85));
+}
+.timer-head{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.timer-display{
+  font-variant-numeric:tabular-nums;
+  font-size:34px;
+  line-height:1;
+  font-weight:900;
+  letter-spacing:1px;
+  color:var(--accent);
+}
+.timer-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.timer-actions button{flex:1 1 120px;border-radius:12px}
+.timer-actions button.running{border-color:var(--green);color:var(--green)}
+.timer-note{margin-top:9px;color:var(--muted);font-size:12px;line-height:1.45}
+.mock-only-nav{grid-template-columns:repeat(2,1fr)}
+.practice-filter-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:10px;
+}
+.filter-field{
+  display:grid;
+  gap:6px;
+  color:var(--muted);
+  font-size:12px;
+  font-weight:800;
+}
+.filter-field[hidden]{display:none}
+
+@media(max-width:720px){
+  .mock-home{margin:8px auto}
+  .mock-home-hero{padding:14px}
+  .mock-start{align-items:flex-start;padding:15px}
+  .mock-start b{font-size:19px}
+  .timer-head{align-items:flex-start;flex-direction:column;gap:10px}
+  .timer-display{font-size:32px}
+  .timer-actions{display:grid;grid-template-columns:1fr 1fr;width:100%}
+  .timer-actions button:last-child{grid-column:1/-1}
+  .practice-filter-grid{grid-template-columns:1fr}
 }
